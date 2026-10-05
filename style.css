@@ -1,15 +1,8 @@
 :root{--green:#55a80b;--dark:#062d20;--ink:#10221b;--muted:#66756e;--soft:#f3f7f3}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}a{color:inherit;text-decoration:none}
 .top{height:86px;display:flex;align-items:center;gap:30px;padding:10px max(4vw,24px);position:sticky;top:0;background:#fff;z-index:20;box-shadow:0 2px 14px #0000000d}.brand img{width:220px;display:block}.top nav{display:flex;gap:26px;margin-left:auto}.top nav a:hover{color:var(--green)}.phone{background:var(--green);color:#fff;padding:14px 20px;border-radius:12px;font-weight:700}.menu{display:none;border:0;background:none;font-size:28px}
-.hero{min-height:610px;display:grid;align-items:center;color:#fff;position:relative;overflow:hidden;background:#174d27}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#03291df5 0%,#073923df 38%,#123e2485 58%,#173f1b2b 100%);z-index:1}
-.garden-scene{position:absolute;inset:0;background:linear-gradient(#6aa84f 0 37%,#2f6e2f 37% 55%,#63a938 55% 100%);overflow:hidden}
-.garden-scene:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 76% 16%,#e8f4a8 0 4%,transparent 4.3%),radial-gradient(ellipse at 72% 33%,#143f22 0 15%,transparent 15.4%),radial-gradient(ellipse at 91% 35%,#1b5727 0 17%,transparent 17.4%),linear-gradient(155deg,transparent 0 61%,#b7c4a8 61% 70%,#7e8d79 70% 72%,transparent 72%);filter:saturate(1.1)}
-.tree{position:absolute;right:18%;top:10%;width:28px;height:58%;background:#5f482e;border-radius:40%;box-shadow:10px 0 0 #725337}
-.tree:before{content:"";position:absolute;width:260px;height:210px;border-radius:50%;background:#2e742d;left:-115px;top:-70px;box-shadow:-90px 30px 0 #3c8133,85px 35px 0 #256828}
-.hedge{position:absolute;left:37%;right:0;top:39%;height:20%;background:linear-gradient(#235e2a,#174b23);border-radius:50% 20% 0 0}
-.lawn{position:absolute;left:0;right:0;bottom:0;height:47%;background:repeating-linear-gradient(103deg,#3f8b31 0 95px,#559d3b 95px 190px)}
-.path{position:absolute;right:-4%;bottom:-5%;width:38%;height:44%;background:repeating-linear-gradient(90deg,#b8b9ae 0 74px,#969a90 75px 78px);transform:skewX(-14deg);box-shadow:inset 0 2px 0 #ddd}
+.hero{min-height:610px;display:grid;align-items:center;color:#fff;position:relative;overflow:hidden;background-image:linear-gradient(90deg,#03291df5 0%,#073923dd 35%,#0d3c248f 53%,#12351d20 76%),url("hero-garten.jpg");background-size:cover;background-position:center}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#00000008,#00000020);z-index:1}
 .hero-inner{width:min(1160px,92%);margin:auto;position:relative;z-index:2}.eyebrow,small{font-weight:800;letter-spacing:.16em;color:#76c42a}.hero h1{font-size:clamp(42px,6vw,70px);line-height:1.02;max-width:820px;margin:12px 0}.hero h1 span{color:#7bcb2a}.lead{font-size:20px;line-height:1.55;max-width:650px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:15px 21px;border-radius:12px;font-weight:800}.primary{background:var(--green);color:#fff}.ghost{border:2px solid #fff;color:#fff}.trust{display:flex;gap:35px;flex-wrap:wrap;margin-top:42px;font-weight:700}
 .section{padding:80px max(4vw,24px)}.heading{text-align:center;max-width:780px;margin:0 auto 38px}.heading h2,.about h2,.cta h2{font-size:clamp(30px,4vw,46px);margin:8px 0 10px}.heading p,.about p{color:var(--muted);line-height:1.6}
 .cards{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.cards article{background:#fff;border:1px solid #e3ebe4;border-radius:18px;padding:24px;box-shadow:0 10px 28px #173d2110;min-height:210px}.cards b{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--green);color:#fff;font-size:24px}.cards h3{margin:18px 0 8px}.cards p{color:var(--muted);line-height:1.5;margin:0}.cards .more{background:#eff8e9}
@@ -17,8 +10,13 @@
 @media(max-width:900px){.top{height:auto;min-height:74px}.brand img{width:185px}.top nav{display:none;position:absolute;left:0;right:0;top:74px;background:#fff;padding:20px 24px;flex-direction:column;box-shadow:0 12px 20px #0002}.nav-open .top nav{display:flex}.menu{display:block;margin-left:auto}.top>.phone{display:none}.cards{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}.about-art{height:260px}.cta{flex-direction:column;align-items:flex-start;gap:12px}}
 @media(max-width:560px){.hero{min-height:650px}.hero h1{font-size:42px}.lead{font-size:18px}.cards{grid-template-columns:1fr}.section,.about{padding:60px 20px}.trust{gap:16px;flex-direction:column}.area-box{flex-direction:column;gap:18px}.btn{width:100%;text-align:center}.brand img{width:160px}}
 
-.cards article:before{content:"";display:block;height:78px;margin:-24px -24px 18px;border-radius:18px 18px 0 0;background:linear-gradient(145deg,#285f2b,#78ad45 45%,#3f7b31)}
-.cards article:nth-child(2):before{background:repeating-linear-gradient(100deg,#275d2a 0 18px,#347032 18px 36px)}
-.cards article:nth-child(3):before{background:radial-gradient(circle at 65% 40%,#f1f0d4 0 9%,transparent 10%),linear-gradient(135deg,#234f29,#6a9b43)}
-.cards article:nth-child(4):before{background:linear-gradient(150deg,#506d31,#95aa55 40%,#705c3a 41% 60%,#48742d 61%)}
-.cards .more:before{background:linear-gradient(135deg,#dfeeda,#b9d9a8)}
+
+.cards article{overflow:hidden}
+.cards article:before{content:"";display:block;height:118px;margin:-24px -24px 18px;background-size:cover;background-position:center}
+.cards article:nth-child(1):before{background-image:url("rasen.jpg")}
+.cards article:nth-child(2):before{background-image:url("hecke.jpg")}
+.cards article:nth-child(3):before{background-image:url("gehoelz.jpg")}
+.cards article:nth-child(4):before{background-image:url("beet.jpg")}
+.cards article:nth-child(n+5):before{background-image:linear-gradient(135deg,#2e672e,#82b64b)}
+.cards .more:before{background-image:linear-gradient(135deg,#dfeeda,#b9d9a8)}
+@media(max-width:560px){.hero{background-position:62% center}.cards article:before{height:150px}}
